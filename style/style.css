@@ -108,10 +108,6 @@ body {
   font-weight: 600;
   line-height: 1.5rem;
 }
-.btn-banner-btn-2 {
-  background-color: black;
-  border: 1px solid white;
-}
 
 ul > li {
   list-style-type: none;
@@ -188,7 +184,7 @@ header {
 }
 
 .banner-box {
-  max-width: 1120px;
+  max-width: 1150px;
   min-height: 580px;
   display: flex;
   flex-direction: row;
@@ -199,7 +195,7 @@ header {
   width: 65%;
   display: flex;
   justify-content: start;
-  align-items: center;
+  align-items: start;
 }
 
 .banner-text {
@@ -211,6 +207,7 @@ header {
 }
 .button-box {
   width: 100%;
+  display: flex;
 }
 
 .banner-box .banner-right {
@@ -302,6 +299,25 @@ header {
 .btn-header {
   background-color: black;
   border: 1px solid white;
+}
+.btn-banner-btn-2 {
+  background-color: black;
+  border: 1px solid white;
+}
+.button-box .pripary-btn {
+  width: 224px;
+  height: 54px;
+  position: static;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1rem 2.5rem 1rem 2.5rem;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+  margin: 0px 14px;
 }
 
 /* Header section end from here */
