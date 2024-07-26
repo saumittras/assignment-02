@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+.intra {
+  font-family: "Inter", sans-serif;
+}
+
+@font-face {
+  font-family: "miama";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/Miama.ttf") format("truetype");
+}
+
+/* ==================================================================
+                       1. All Fonts setting end from Here
+======================================================================*/
+
+/* ==================================================================
+                       2. General setting start from Here
+======================================================================*/
+
+* {
+  margin: 0;
+  padding: 0;
+  /* width: 100%;
+  height: 100%;
+  min-height: 100%;
+  overflow: hidden; */
+  background-color: black;
+}
+h1 {
+  color: white;
+}
+
+.change-your-habits {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.description,
+h1 {
+  color: rgba(255, 255, 255, 0.5);
+  /* font-family: Inter; */
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0.5px;
+  text-align: left;
+  margin: 1.75rem;
+}
+.grid-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
