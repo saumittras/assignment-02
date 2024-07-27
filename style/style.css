@@ -1,31 +1,5 @@
-/*
-* Assignment No: 02
-* Author: Saumittra Sarker
-* Author GitHub URL: https://github.com/saumittras
-* Version: 1.3.0
-*/
+/* Font Setup Start from here */
 
-/* ------------------------------------------------------------
-1. Fonts
-2. General Styles
-3. Page loadig animation
-4. Header
-5. Page Content
-6. Elements
-7. Single Page (Blog Posts, 404 etc.)
-8. Media Queries
-9. Pricing
-10. Full Width Styles
-11. Updates
------------------------------------------------------------- */
-
-/* ==================================================================
-                       1. All Fonts setting start from Here
-======================================================================*/
-/* All Fonts name
-    1. Inter
-    2. Miama
-*/
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 
 .intra {
@@ -39,43 +13,31 @@
   src: url("/fonts/Miama.ttf") format("truetype");
 }
 
-/* ==================================================================
-                       1. All Fonts setting end from Here
-======================================================================*/
-
-/* ==================================================================
-                       2. General setting start from Here
-======================================================================*/
-
+/* General Setting Start here */
 html {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   width: 100%;
-  height: 100%;
-  min-height: 100%;
+  color: white;
 }
 body {
-  width: 1440px;
+  width: 1366px;
   background-color: rgb(0, 0, 0);
 }
-.display-none {
-  display: none;
-}
-.display-flex {
+/* General Setting Start here */
+/* Shear Styles start from here */
+
+.flex-direction-column {
   display: flex;
+  flex-direction: column;
 }
 
-h1,
-h2,
-h3,
-h4 {
-  color: rgb(255, 255, 255);
-  font-family: Inter;
-  font-weight: 900;
-  line-height: 120%;
-  letter-spacing: 0%;
-  text-align: left;
+.flex-direction-row {
+  display: flex;
+  flex-direction: row;
 }
+
 .description {
   color: rgba(255, 255, 255, 0.5);
   font-family: Inter;
@@ -84,34 +46,54 @@ h4 {
   line-height: 1.5rem;
   letter-spacing: 0.5px;
   text-align: left;
-  margin: 1.75rem;
+  /* margin: 1.75rem; */
 }
 
-/* ==================================================================
-                       2. General setting end from Here
-======================================================================*/
-
-/* ==================================================================
-                       3. Shear Styles start from Here
-======================================================================*/
-
-.miama {
-  color: rgb(255, 255, 255);
-  font-family: miama;
-  font-size: 4.9rem;
-}
-.primary-color {
+.website-title {
   color: rgb(230, 83, 60);
+  font-family: Inter;
+  font-size: 2.25rem;
+  font-weight: 800;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: left;
 }
-.heading-h1 {
+
+.website-menu-font {
   color: rgb(255, 255, 255);
   font-family: Inter;
-  font-size: 4.9rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.header-title {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 4.87rem;
   font-weight: 900;
   line-height: 120%;
   letter-spacing: 0%;
   text-align: left;
-  margin: 1.75rem 0;
+}
+.section-title {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.sub-section-title {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 1.75rem;
+  font-weight: 900;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: left;
 }
 
 .pripary-btn {
@@ -128,72 +110,352 @@ h4 {
   font-weight: 600;
   line-height: 1.5rem;
 }
-.download {
-  background-color: black;
-  /* border: 1px solid white; */
-  border: 2px solid red;
-}
 
-/* ==================================================================
-                       3. Shear Styles end from Here
-======================================================================*/
-
-/* ==================================================================
-                       3. Nav-Bar Styles end from Here
-======================================================================*/
-.nav-bar {
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1060px;
-  margin: 3.6rem auto;
-  border: 2px solid red;
-}
-.web-title {
-  font-size: 2.25rem;
-}
-
-#nav-bar-ul {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  max-width: 457px;
-  gap: 3rem;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 39px;
-  margin: 0px 10px;
-}
-.nav-bar .menu-item {
-  display: flex;
-}
-.nav-bar .menu-item a {
+ul > li {
   list-style-type: none;
+}
+ul > li > .links {
   text-decoration: none;
-  color: rgb(255, 255, 255);
+  color: white;
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 120%;
   margin: 0 0.75rem;
 }
 
-/* Banner Section */
-.banner-box {
-  max-width: 1060px;
-  min-height: 580px;
+/* Shear Styles ends from here */
+
+/* Header Section styling start from here */
+
+#header {
+  max-width: 1360px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.navbar {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  border: 2px solid goldenrod;
 }
-.banner-box .content-box {
-  max-width: 520px;
-  height: 440px;
+.menu-list {
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid white;
+  border-radius: 30px;
 }
-.banner-box .banner-image-box {
-  background: url("/images/Images2.png");
-  background-size: auto;
+/* #nav-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+} */
+.website-title {
+  font-size: 2.25rem;
+  color: rgb(230, 83, 60);
+}
+.banner-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin-left: 190px;
+}
+
+.shape {
+  color: rgb(255, 255, 255);
+  font-family: miama;
+  font-size: 4.9rem;
+}
+
+/* Change Your Habits Styles starts from here  */
+.change-habits {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+}
+.change-habit-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+}
+
+.havit-image-grid-item {
+  width: 250px;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+}
+#center {
+  display: flex;
+  justify-content: center;
+}
+.havit-image-grid-item .grid-image-box {
+  width: 240px;
+  height: 240px;
+}
+.havit-image-grid-item .grid-image-box img {
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  border: 5px solid rgb(33, 33, 33);
+}
+
+/* Change Your Habits Styles ends from here  */
+
+/* Header Section styling end from here */
+
+.btn-banner-btn-2 {
+  background-color: black;
+  border: 1px solid white;
+}
+
+/* Trainings and Exercises Style start from Here */
+
+/* Training and Exercises styles start from here */
+
+.exercises {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.exercises-content-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  text-align: center;
+}
+.exercises-image-grid .row-1 {
+  max-width: 1060px;
+  display: grid;
+  grid-template-columns: 0.8fr 2fr 1.2fr;
+}
+.exercises-image-grid .row-2 {
+  max-width: 1060px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.5fr;
+}
+.exercises-image-grid .box-1 {
+  background-image: linear-gradient(rgba(6, 255, 210, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/exercise1.jpg");
+
+  background-position: center;
   background-repeat: no-repeat;
   background-position: center;
-  width: 350px;
-  height: 580px;
+  background-size: cover;
+  width: auto;
+  height: 200px;
 }
-/* ==================================================================
-                       3. Nav-Bar Styles end from Here
-======================================================================*/
+.exercises-image-grid .box-2 {
+  background-image: linear-gradient(rgba(255, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/exercise2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  height: 200px;
+}
+
+.exercises-image-grid .box-3 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/exercise3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  height: 200px;
+}
+.exercises-image-grid .box-4 {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/exercise4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  height: 200px;
+}
+.exercises-image-grid .box-5 {
+  background-image: linear-gradient(rgba(66, 255, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/exercise5.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  height: 200px;
+}
+.exercises-image-grid .box-6 {
+  background-image: linear-gradient(rgba(0, 71, 255, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../images/exercise6.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  height: 200px;
+}
+
+/* Training and Exercises styles ends from here */
+
+/* Running section styles start from here  */
+
+.run-extra {
+  max-width: 1060px;
+  min-height: 450px;
+  background-color: rgb(33, 33, 33);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 18px;
+  margin: 0 auto;
+}
+.content-box,
+.run-extra-image {
+  max-width: 530px;
+  min-height: 350px;
+  margin-left: 40px;
+}
+.run-extra-image {
+  background-image: url("../images/runningv2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 310px;
+  height: 260px;
+  border-radius: 18px;
+  margin: 20px;
+  z-index: 1;
+}
+.content-box {
+  display: flex;
+  flex-direction: column;
+}
+.run-extra-title {
+  font-size: 48px;
+  margin-bottom: 40px;
+}
+.run-extra {
+  margin-top: 80px;
+}
+/* Running section styles ends from here  */
+
+/* Trainings and Exercises Style ends from Here */
+
+/* Meet our team section styling start from here */
+.our-team {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.our-team-image-grid {
+  max-width: 1060px;
+  height: auto;
+  background-color: rgb(33, 33, 33);
+  border-radius: 20px;
+}
+
+.grid-image-item {
+  height: 255px;
+  width: 310px;
+}
+.grid-image-item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.our-team-image-grid {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+}
+/* Meet our team section styling end from here */
+
+/* BIM Calculator style start from here */
+.BMI-calculator-form {
+  justify-content: space-evenly;
+}
+/* BIM Calculator style start from here */
+/* Footer Style start from here */
+.footer-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+}
+.footer {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.footer-title {
+  color: rgb(230, 83, 60);
+}
+.fitness,
+.get-started {
+  max-width: 33%;
+  padding-left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.copyright h5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  text-align: left;
+}
+.get-started h4 {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 1.9rem;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.get-started a {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 1.36rem;
+  font-weight: 400;
+  /* line-height: 120%; */
+  letter-spacing: 0%;
+  text-align: left;
+  margin: 1.18rem;
+}
+.footer-title {
+  color: rgb(230, 83, 60);
+  font-family: Inter;
+  font-size: 4.13rem;
+  font-weight: 800;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+/* Footer Style ends from here */

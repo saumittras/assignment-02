@@ -1,0 +1,163 @@
+/* Font Setup Start from here */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+.intra {
+  font-family: "Inter", sans-serif;
+}
+
+@font-face {
+  font-family: "miama";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/Miama.ttf") format("truetype");
+}
+
+/* General Setting Start here */
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  color: white;
+}
+body {
+  width: 1440px;
+  background-color: rgb(0, 0, 0);
+}
+/* General Setting Start here */
+/* Shear Styles start from here */
+
+.flex-direction-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-direction-row {
+  display: flex;
+  flex-direction: row;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-weight: 900;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+h1 {
+  font-size: 4.9rem;
+  margin: 1.75rem 0;
+}
+
+.description {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0.5px;
+  text-align: left;
+  margin: 1.75rem;
+}
+
+.pripary-btn {
+  width: 14rem;
+  height: 3.38rem;
+  border-radius: 42px;
+  background: rgb(230, 83, 60);
+  padding: 1rem 2.5rem 1rem 2.5rem;
+  margin: 0 1rem;
+  text-align: center;
+  border: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+
+ul > li {
+  list-style-type: none;
+}
+ul > li > .links {
+  text-decoration: none;
+  color: white;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 120%;
+  margin: 0 0.75rem;
+}
+
+/* Training and Exercises styles start from here */
+
+.exercises-image-grid .row-1 {
+  max-width: 1060px;
+  display: grid;
+  grid-template-columns: 0.8fr 2fr 1.2fr;
+}
+.exercises-image-grid .row-2 {
+  max-width: 1060px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1.5fr;
+}
+.exercises-image-grid .box-1 {
+  background-image: url("../images/exercise1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  height: 200px;
+}
+.exercises-image-grid .box-2 {
+  background-image: url("../images/exercise2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  height: 200px;
+}
+.exercises-image-grid .box-3 {
+  background-image: url("../images/exercise3.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  height: 200px;
+}
+.exercises-image-grid .box-4 {
+  background-image: url("../images/exercise4.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  height: 200px;
+}
+.exercises-image-grid .box-5 {
+  background-image: url("../images/exercise5.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  height: 200px;
+}
+.exercises-image-grid .box-6 {
+  background-image: url("../images/exercise6.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: auto;
+  height: 200px;
+}
+
+/* Training and Exercises styles ends from here */

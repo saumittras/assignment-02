@@ -1,0 +1,199 @@
+/*
+* Assignment No: 02
+* Author: Saumittra Sarker
+* Author GitHub URL: https://github.com/saumittras
+* Version: 1.3.0
+*/
+
+/* ------------------------------------------------------------
+1. Fonts
+2. General Styles
+3. Page loadig animation
+4. Header
+5. Page Content
+6. Elements
+7. Single Page (Blog Posts, 404 etc.)
+8. Media Queries
+9. Pricing
+10. Full Width Styles
+11. Updates
+------------------------------------------------------------ */
+
+/* ==================================================================
+                       1. All Fonts setting start from Here
+======================================================================*/
+/* All Fonts name
+    1. Inter
+    2. Miama
+*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+.intra {
+  font-family: "Inter", sans-serif;
+}
+
+@font-face {
+  font-family: "miama";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/Miama.ttf") format("truetype");
+}
+
+/* ==================================================================
+                       1. All Fonts setting end from Here
+======================================================================*/
+
+/* ==================================================================
+                       2. General setting start from Here
+======================================================================*/
+
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+}
+body {
+  width: 1440px;
+  background-color: rgb(0, 0, 0);
+}
+.display-none {
+  display: none;
+}
+.display-flex {
+  display: flex;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-weight: 900;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.description {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+  letter-spacing: 0.5px;
+  text-align: left;
+  margin: 1.75rem;
+}
+
+/* ==================================================================
+                       2. General setting end from Here
+======================================================================*/
+
+/* ==================================================================
+                       3. Shear Styles start from Here
+======================================================================*/
+
+.miama {
+  color: rgb(255, 255, 255);
+  font-family: miama;
+  font-size: 4.9rem;
+}
+.primary-color {
+  color: rgb(230, 83, 60);
+}
+.heading-h1 {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 4.9rem;
+  font-weight: 900;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: left;
+  margin: 1.75rem 0;
+}
+
+.pripary-btn {
+  width: 14rem;
+  height: 3.38rem;
+  border-radius: 42px;
+  background: rgb(230, 83, 60);
+  padding: 1rem 2.5rem 1rem 2.5rem;
+  margin: 0 1rem;
+  text-align: center;
+  border: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+.download {
+  background-color: black;
+  /* border: 1px solid white; */
+  border: 2px solid red;
+}
+
+/* ==================================================================
+                       3. Shear Styles end from Here
+======================================================================*/
+
+/* ==================================================================
+                       3. Nav-Bar Styles end from Here
+======================================================================*/
+.nav-bar {
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1060px;
+  margin: 3.6rem auto;
+  border: 2px solid red;
+}
+.web-title {
+  font-size: 2.25rem;
+}
+
+#nav-bar-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  max-width: 457px;
+  gap: 3rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 39px;
+  margin: 0px 10px;
+}
+.nav-bar .menu-item {
+  display: flex;
+}
+.nav-bar .menu-item a {
+  list-style-type: none;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 120%;
+  margin: 0 0.75rem;
+}
+
+/* Banner Section */
+.banner-box {
+  max-width: 1060px;
+  min-height: 580px;
+  justify-content: space-between;
+  align-items: center;
+}
+.banner-box .content-box {
+  max-width: 520px;
+  height: 440px;
+}
+.banner-box .banner-image-box {
+  background: url("/images/Images2.png");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 350px;
+  height: 580px;
+}
+/* ==================================================================
+                       3. Nav-Bar Styles end from Here
+======================================================================*/
