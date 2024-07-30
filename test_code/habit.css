@@ -8,47 +8,184 @@
   font-family: "miama";
   font-style: normal;
   font-weight: 400;
-  src: url("/fonts/Miama.ttf") format("truetype");
+  src: url("fonts/Miama.ttf") format("truetype");
 }
 
-/* ==================================================================
-                       1. All Fonts setting end from Here
-======================================================================*/
-
-/* ==================================================================
-                       2. General setting start from Here
-======================================================================*/
-
+/* General Setting Start here */
 * {
   margin: 0;
   padding: 0;
-  /* width: 100%;
-  height: 100%;
-  min-height: 100%;
-  overflow: hidden; */
-  background-color: black;
+  box-sizing: border-box;
 }
-h1 {
+body {
+  width: 1360px;
+  background-color: rgb(0, 0, 0);
+  width: 100%;
   color: white;
 }
+/* General Setting Start here */
+/* Shear Styles start from here */
 
-.change-your-habits {
+.flex-direction-column {
   display: flex;
   flex-direction: column;
-  justify-content: center;
 }
-.description,
-h1 {
+
+.flex-direction-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.description {
   color: rgba(255, 255, 255, 0.5);
-  /* font-family: Inter; */
+  font-family: Inter;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
   letter-spacing: 0.5px;
   text-align: left;
-  margin: 1.75rem;
+  /* margin: 1.75rem; */
 }
-.grid-box {
+
+.website-title {
+  color: rgb(230, 83, 60);
+  font-family: Inter;
+  font-size: 2.25rem;
+  font-weight: 800;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.website-menu-font {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 1.125rem;
+  font-weight: 600;
+  /* line-height: 22px; */
+  letter-spacing: 0%;
+  text-align: left;
+}
+.header-title {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 4.87rem;
+  font-weight: 900;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.section-title {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 3rem;
+  font-weight: 900;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.sub-section-title {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 1.75rem;
+  font-weight: 900;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.pripary-btn {
+  width: 14rem;
+  height: 3.38rem;
+  border-radius: 42px;
+  background: rgb(230, 83, 60);
+  padding: 1rem 2.5rem 1rem 2.5rem;
+  margin: 0 1rem;
+  text-align: center;
+  border: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.125rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+}
+
+ul > li {
+  list-style-type: none;
+}
+ul > li > .links {
+  text-decoration: none;
+  color: white;
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 120%;
+  margin: 0 0.75rem;
+}
+
+/* Shear Styles ends from here */
+
+/* Change your habit styling srart from here */
+.havit-box {
+  max-width: 1044px;
+  min-height: 452px;
+  margin: 0 auto;
+}
+.change-habit-content {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center; */
+  max-width: 671px;
+  min-height: 120px;
+  margin: 0 auto;
+}
+.change-habits-title,
+.change-habit-description {
+  text-align: center;
+}
+.change-habits-title {
+  margin-bottom: 14px;
+}
+.change-habit-description {
+  margin-bottom: 70px;
+}
+
+.habits-image-grid-box {
+  max-width: 1044px;
+  min-height: 274px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 38px;
 }
+
+/* Grid image box styling  */
+.havit-image-grid-item {
+  width: 231px;
+  height: 274px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.grid-image-box {
+  width: 180px;
+  height: 180px;
+}
+.grid-image-box .grid-image {
+  width: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+.grid-item-content {
+  width: 231px;
+  height: 64px;
+}
+.grid-item-content .image-title {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+/* Change your habits styling start from here */

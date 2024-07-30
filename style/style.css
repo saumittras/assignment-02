@@ -8,7 +8,7 @@
   font-family: "miama";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/Miama.ttf") format("truetype");
+  src: url("fonts/Miama.ttf") format("truetype");
 }
 
 /* General Setting Start here */
@@ -309,46 +309,72 @@ header {
 main {
   margin-top: 95px;
 }
-/* Change Your Habits Styles starts from here  */
-.change-habits {
-  display: flex;
-  text-align: center;
-  justify-content: center;
-  align-content: center;
+/* Change your habit styling srart from here */
+.havit-box {
+  max-width: 1044px;
+  min-height: 452px;
+  margin: 0 auto;
 }
 .change-habit-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 80px;
+  /* align-items: center;
+  justify-content: center; */
+  max-width: 671px;
+  min-height: 120px;
+  margin: 0 auto;
 }
-
-.havit-image-grid-item {
-  width: 250px;
-  height: 340px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
+.change-habits-title,
+.change-habit-description {
   text-align: center;
 }
-#center {
-  display: flex;
-  justify-content: center;
+.change-habits-title {
+  margin-bottom: 14px;
 }
-.havit-image-grid-item .grid-image-box {
-  width: 240px;
-  height: 240px;
-}
-.havit-image-grid-item .grid-image-box img {
-  width: 90%;
-  height: 90%;
-  border-radius: 50%;
-  border: 5px solid rgb(33, 33, 33);
+.change-habit-description {
+  margin-bottom: 70px;
 }
 
-/* Change Your Habits Styles ends from here  */
+.habits-image-grid-box {
+  max-width: 1044px;
+  min-height: 274px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 38px;
+}
+
+/* Grid image box styling  */
+.havit-image-grid-item {
+  width: 231px;
+  height: 274px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.grid-image-box {
+  width: 180px;
+  height: 180px;
+}
+.grid-image-box .grid-image {
+  width: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+.grid-item-content {
+  width: 231px;
+  height: 64px;
+}
+.grid-item-content .image-title {
+  color: rgb(255, 255, 255);
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+/* Change your habits styling start from here */
 
 /* Header Section styling end from here */
 
