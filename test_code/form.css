@@ -1,0 +1,40 @@
+.height {
+  grid-area: height;
+}
+.weight {
+  grid-area: weight;
+}
+.age-s {
+  grid-area: gender;
+}
+.gender {
+  grid-area: gender;
+}
+.activity {
+  grid-area: activity;
+}
+.height,
+.weight,
+.age-s,
+.gender,
+.activity {
+  height: 48px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.form {
+  display: grid;
+  gap: 12px;
+  grid-template-areas:
+    "height height weight weight"
+    "age-s  age-s  gender gender"
+    "activity activity activity activity";
+}

@@ -200,33 +200,35 @@
               </table>
             </div>
             <div class="bmi-calculator-input">
-              <h3 class="bim-calculator-input-title sub-section-title">
-                Calculate your BMI
-              </h3>
-              <p class="description">
-                We believe fitness should be accessible to everyone, everywhere,
-                regardless of income or access to a gym.
-              </p>
-              <form action="">
-                <input type="text" placeholder="Height/cm" />
-                <input type="text" placeholder="Weight/kg" /><br />
-                <input type="text" placeholder="Age" />
-                <select name="gender" id="gender">
+              <div class="calculator-content-box">
+                <h3 class="bim-calculator-input-title sub-section-title">
+                  Calculate your BMI
+                </h3>
+                <p class="description">
+                  We believe fitness should be accessible to everyone,
+                  everywhere, regardless of income or access to a gym.
+                </p>
+              </div>
+
+              <form action="" class="form">
+                <input class="height" type="text" placeholder="Height/cm" />
+                <input class="weight" type="text" placeholder="Weight/kg" />
+                <input class="age-s" type="text" placeholder="Weight/kg" />
+                <select class="gender" name="gender" id="gender">
                   <option value="genter" selected>Sex</option>
-                  <option value="genter" selected>Male</option>
-                  <option value="genter" selected>Female</option>
+                  <option value="genter">Male</option>
+                  <option value="genter">Female</option>
+                  <option value="genter">Other</option>
                 </select>
-                <br />
-                <select name="select-activity" id="activity">
+                <select class="activity" name="select-activity" id="activity">
                   <option value="select-activity" selected>
                     Select an avtivity factor
-                  </option></select
-                ><br />
-
-                <button class="btn-primary btn-BMI-calculator pripary-btn">
-                  Calculate
-                </button>
+                  </option>
+                </select>
               </form>
+              <button class="btn-primary btn-BMI-calculator pripary-btn">
+                Calculate
+              </button>
             </div>
           </div>
         </div>

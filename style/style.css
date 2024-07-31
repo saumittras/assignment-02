@@ -576,8 +576,10 @@ main {
 /* BIM Calculator style start from here */
 .BMI-claculator {
   max-width: 1360px;
-  border: 1px solid green;
   margin-top: 88px;
+}
+.bmi-content-box {
+  max-width: 671px;
 }
 .bmi-calculator-box {
   display: flex;
@@ -593,13 +595,18 @@ main {
   width: 100%;
   min-height: 487px;
   background-color: rgb(34, 34, 34);
-  border: 1px solid red;
 }
 .bmi-chart {
   width: 310px;
   height: 400px;
-  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+.bmi-chart-title {
+  margin-bottom: 52px;
+}
+
 .bmi-chart table {
   width: 310px;
   height: 216px;
@@ -611,13 +618,83 @@ main {
 .bmi-chart th {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-collapse: collapse;
+  padding-left: 18px;
 }
 
 .bmi-calculator-input {
   max-width: 577px;
   min-height: 386px;
-  border: 1px solid red;
 }
+.calculator-content-box {
+  width: 100%;
+  height: auto;
+  margin-bottom: 34px;
+}
+.calculator-content-box .bim-calculator-input-title {
+  margin-bottom: 14px;
+  text-align: left;
+}
+.height {
+  grid-area: height;
+}
+.weight {
+  grid-area: weight;
+}
+.age-s {
+  grid-area: age;
+}
+.gender {
+  grid-area: gender;
+}
+.activity {
+  grid-area: activity;
+}
+.height,
+.weight,
+.age-s,
+.gender,
+.activity {
+  height: 48px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.6);
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+  border: none;
+}
+::placeholder {
+  padding: 20px;
+}
+select {
+  padding-left: 20px;
+}
+
+select option {
+  background-color: black;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.form {
+  display: grid;
+  gap: 12px;
+  grid-template-areas:
+    "height height weight weight"
+    "age age gender gender"
+    "activity activity activity activity";
+}
+.btn-BMI-calculator {
+  margin-top: 34px;
+  margin-left: 0px;
+}
+
 /* BIM Calculator style start from here */
 /* Footer Style start from here */
 .footer-links {
