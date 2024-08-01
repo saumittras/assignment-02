@@ -20,7 +20,6 @@
 body {
   width: 1360px;
   background-color: rgb(0, 0, 0);
-  width: 100%;
   color: white;
 }
 /* General Setting Start here */
@@ -446,18 +445,26 @@ main {
 
 /* Training and Exercises styles start from here */
 
+.exercises-box {
+  margin-top: 100px;
+}
 .exercises {
-  max-width: 1000px;
+  max-width: 1060px;
+  min-height: 581px;
   margin: 0 auto;
 }
 .exercises-content-box {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
+  margin-bottom: 58px;
 }
 .content {
   text-align: center;
+}
+.content h2 {
+  margin-bottom: 14px;
 }
 .exercises-image-grid .row-1 {
   max-width: 1060px;
@@ -534,8 +541,6 @@ main {
 
 /* Training and Exercises styles ends from here */
 
-/* Trainings and Exercises Style ends from Here */
-
 /* Meet our team section styling start from here */
 .our-team {
   margin: 0 auto;
@@ -569,8 +574,49 @@ main {
 /* Meet our team section styling end from here */
 
 /* BIM Calculator style start from here */
+.BMI-claculator {
+  max-width: 1360px;
+  border: 1px solid green;
+  margin-top: 88px;
+}
+.bmi-calculator-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .BMI-calculator-form {
-  justify-content: space-evenly;
+  margin-top: 88px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  min-height: 487px;
+  background-color: rgb(34, 34, 34);
+  border: 1px solid red;
+}
+.bmi-chart {
+  width: 310px;
+  height: 400px;
+  border: 1px solid green;
+}
+.bmi-chart table {
+  width: 310px;
+  height: 216px;
+  text-align: left;
+}
+.bmi-chart table,
+.bmi-chart tr,
+.bmi-chart td,
+.bmi-chart th {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-collapse: collapse;
+}
+
+.bmi-calculator-input {
+  max-width: 577px;
+  min-height: 386px;
+  border: 1px solid red;
 }
 /* BIM Calculator style start from here */
 /* Footer Style start from here */
