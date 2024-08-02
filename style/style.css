@@ -541,38 +541,6 @@ main {
 
 /* Training and Exercises styles ends from here */
 
-/* Meet our team section styling start from here */
-.our-team {
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.our-team-image-grid {
-  max-width: 1060px;
-  height: auto;
-  background-color: rgb(33, 33, 33);
-  border-radius: 20px;
-}
-
-.grid-image-item {
-  height: 255px;
-  width: 310px;
-}
-.grid-image-item img {
-  width: 100%;
-  height: 100%;
-  border-radius: 20px;
-}
-.our-team-image-grid {
-  display: grid;
-  gap: 20px;
-  padding: 20px;
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: repeat(3, 1fr);
-}
-/* Meet our team section styling end from here */
-
 /* BIM Calculator style start from here */
 .BMI-claculator {
   max-width: 1360px;
@@ -670,7 +638,8 @@ main {
   padding: 20px;
 }
 select {
-  padding-left: 20px;
+  /* padding-left: 20px; */
+  padding: 12px 20px 12px 20px;
 }
 
 select option {
@@ -696,6 +665,55 @@ select option {
 }
 
 /* BIM Calculator style start from here */
+
+/* Meet our team section styling start from here */
+.our-team {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.out-team-textbox {
+  max-width: 671px;
+  height: auto;
+  text-align: center;
+  margin-bottom: 58px;
+}
+
+.our-team-title {
+  text-align: center;
+  margin-top: 88px;
+}
+.our-team-description {
+  text-align: center;
+  margin-top: 14px;
+}
+.our-team-image-grid {
+  max-width: 1060px;
+  height: auto;
+  background-color: rgb(33, 33, 33);
+  border-radius: 20px;
+}
+
+.grid-image-item {
+  width: 327px;
+  height: 272px;
+}
+.grid-image-item img {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.our-team-image-grid {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+}
+/* Meet our team section styling end from here */
+
 /* Footer Style start from here */
 .footer-links {
   display: flex;
