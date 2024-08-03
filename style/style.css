@@ -453,6 +453,33 @@ main {
   min-height: 581px;
   margin: 0 auto;
 }
+.row-1 .box-1,
+.row-1 .box-2,
+.row-1 .box-3,
+.row-2 .box-4,
+.row-2 .box-5,
+.row-2 .box-6 {
+  position: relative;
+}
+.box-1 p,
+.box-3 p,
+.box-5 p,
+.box-6 p {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+}
+.box-2 p {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+}
+.box-4 p {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
 .exercises-content-box {
   display: flex;
   flex-direction: column;
@@ -699,6 +726,34 @@ select option {
 .grid-image-item {
   width: 327px;
   height: 272px;
+  position: relative;
+}
+.trainer-info {
+  position: absolute;
+  left: 20px;
+  bottom: 15px;
+  padding: 5px 20px;
+  border-radius: 8px;
+  /* From https://css.glass */
+  background: rgba(215, 49, 49, 0.24);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(215, 49, 49, 0.3);
+}
+.trainer-info h5 {
+  font-size: 1.25rem;
+  color: rgb(240, 240, 240);
+}
+.trainer-info p {
+  color: rgba(255, 255, 255, 0.5);
+  font-family: Inter;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  text-align: center;
 }
 .grid-image-item img {
   width: 100%;
@@ -717,14 +772,20 @@ select option {
 /* Footer Style start from here */
 .footer-links {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   align-content: center;
-}
-.footer {
   max-width: 1000px;
   margin: 0 auto;
 }
+
+.footer {
+  margin-top: 88px;
+  width: 100%;
+  min-height: 490px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
 .footer-title {
   color: rgb(230, 83, 60);
 }
@@ -736,6 +797,16 @@ select option {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+  margin-top: 66px;
+}
+
+.get-started {
+  height: 250px;
+  width: 181px;
+}
+.fitness {
+  width: 445px;
+  height: 176px;
 }
 .copyright h5 {
   display: flex;
@@ -743,11 +814,12 @@ select option {
   align-items: center;
   color: rgba(255, 255, 255, 0.5);
   font-family: Inter;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.3px;
   text-align: left;
+  margin: 35px auto;
 }
 .get-started h4 {
   color: rgb(255, 255, 255);
@@ -757,19 +829,19 @@ select option {
   line-height: 120%;
   letter-spacing: 0%;
   text-align: left;
+  margin-bottom: 40px;
 }
 
-.get-started a {
-  text-decoration: none;
+.get-started ul li {
+  margin-bottom: 20px;
+}
+.get-started ul li .links {
   color: rgba(255, 255, 255, 0.5);
   font-family: Inter;
-  font-size: 1.36rem;
+  font-size: 1.2rem;
   font-weight: 400;
-  /* line-height: 120%; */
-  letter-spacing: 0%;
-  text-align: left;
-  margin: 1.18rem;
 }
+
 .footer-title {
   color: rgb(230, 83, 60);
   font-family: Inter;
@@ -778,6 +850,9 @@ select option {
   line-height: 120%;
   letter-spacing: 0%;
   text-align: left;
+}
+hr {
+  margin-top: 80px;
 }
 
 /* Footer Style ends from here */
