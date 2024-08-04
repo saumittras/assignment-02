@@ -568,6 +568,123 @@ main {
 
 /* Training and Exercises styles ends from here */
 
+/* customer review section style start from here */
+.clint-review {
+  max-width: 1360px;
+  min-height: 500px;
+  margin-top: 70px;
+}
+
+.clint-review-content {
+  max-width: 800px;
+  height: auto;
+  margin-bottom: 66px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+.google-box {
+  max-width: 1260px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+.google-icon {
+  display: flex;
+  align-items: flex-end;
+}
+.google-icon img {
+  width: 16rem;
+  height: 5rem;
+}
+
+.google-icon p {
+  display: inline-block;
+}
+.review-btn {
+  width: auto;
+  padding: 1rem 1.5rem;
+}
+
+.clint-review-box {
+  width: 1260px;
+  height: auto;
+  display: flex;
+  gap: 10px;
+
+  margin: 0 auto;
+}
+.review-item-box {
+  width: 420px;
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  background-color: rgb(33, 33, 33);
+}
+.left-box {
+  width: 170px;
+  height: 170px;
+
+  border-top-right-radius: 80px;
+  border-bottom-right-radius: 80px;
+  background-color: black;
+}
+.left-box {
+  width: 50%;
+}
+.right-box {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+.customar-text {
+  width: 180px;
+  height: auto;
+}
+.image {
+  width: 150px;
+  height: 150px;
+  position: relative;
+}
+.image .clint-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-left: 14px;
+}
+.rating-box {
+  display: flex;
+}
+.rating-box h4 {
+  margin-left: 10px;
+}
+.clint-name {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.customar-text {
+  width: 200px;
+  height: auto;
+}
+.rating-box img {
+  width: 13.07px;
+  height: 12.32px;
+  left: 2.47px;
+  right: 2.47px;
+  top: 3.02px;
+  bottom: 2.66px;
+}
+/* customer review section style end from here */
+
 /* BIM Calculator style start from here */
 .BMI-claculator {
   max-width: 1360px;
