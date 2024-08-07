@@ -18,7 +18,7 @@
   box-sizing: border-box;
 }
 body {
-  width: 1360px;
+  max-width: 1360px;
   background-color: rgb(0, 0, 0);
   color: white;
 }
@@ -162,7 +162,7 @@ ul > li > .links {
 }
 
 .clint-review-box {
-  width: 1260px;
+  max-width: 1260px;
   height: auto;
   display: flex;
   gap: 10px;
@@ -170,7 +170,7 @@ ul > li > .links {
   margin: 0 auto;
 }
 .review-item-box {
-  width: 420px;
+  max-width: 420px;
   height: 250px;
   display: flex;
   flex-direction: row;
@@ -197,10 +197,14 @@ ul > li > .links {
   display: flex;
   flex-direction: column;
   align-content: space-around;
+  padding-right: 5px;
 }
 .customar-text {
   width: 180px;
   height: auto;
+}
+.customar-text q {
+  padding-right: 1rem;
 }
 .image {
   width: 150px;
@@ -237,3 +241,20 @@ ul > li > .links {
   bottom: 2.66px;
 }
 /* customer review section style end from here */
+
+@media screen and (max-width: 576px) {
+  .clint-review-box {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid red;
+  }
+  .google-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .review-item-box {
+    max-width: 420px;
+    height: auto;
+  }
+}

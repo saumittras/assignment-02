@@ -185,8 +185,8 @@ header {
 
 .banner-box {
   max-width: 1120px;
-  min-height: 580px;
-  /* border: 2px solid red; */
+  height: auto;
+  border: 2px solid red;
   display: flex;
   flex-direction: row;
   margin: 0 auto;
@@ -194,7 +194,7 @@ header {
 
 .banner-box .banner-left {
   width: 65%;
-  /* border: 2px solid red; */
+  border: 2px solid green;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -204,14 +204,14 @@ header {
   margin: 28px auto;
 }
 .content-box {
-  width: 600px;
-  height: 440px;
-  /* border: 2px solid green; */
+  max-width: 600px;
+  height: auto;
+  border: 2px solid blue;
 }
 
 .banner-box .banner-right {
   width: 35%;
-  /* border: 2px solid red; */
+  border: 2px solid tomato;
   background-image: url("../images/banner.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -302,3 +302,14 @@ header {
 }
 
 /* Header section end from here */
+
+/* Styling for mobile Device */
+@media screen and (max-width: 576px) {
+  .banner-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .mobile-hide {
+    display: none;
+  }
+}

@@ -977,3 +977,21 @@ hr {
 }
 
 /* Footer Style ends from here */
+.display-none {
+  display: none;
+}
+
+/* Styling for mobile device from here */
+@media screen and (max-width: 576px) {
+  /* .mobile-hide {
+    display: none;
+  } */
+  .banner-box {
+    display: none;
+    flex-direction: column;
+  }
+  #mobile {
+    display: flex;
+    flex-direction: column;
+  }
+}

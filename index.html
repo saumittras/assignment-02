@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="display-none">
         <div class="nav-box">
           <div class="website-title"><h1>Fitness</h1></div>
           <div class="menu website-menu-font">
@@ -20,10 +20,21 @@
             </ul>
           </div>
         </div>
+        <div class="nav-box-mobile">
+          <div class="website-title"><h1>Fitness</h1></div>
+          <div class="menu website-menu-font">
+            <ul>
+              <li><a href="#" class="link active">Home</a></li>
+              <li><a href="#" class="link">Service</a></li>
+              <li><a href="#" class="link">Contact</a></li>
+              <li><a href="#" class="link">About</a></li>
+            </ul>
+          </div>
+        </div>
       </nav>
-      <div class="banner-box">
+      <div class="banner-box" id="mobile">
         <div class="banner-left">
-          <div class="content-box">
+          <div class="     ">
             <h1 class="header-title">
               Get body in <span class="shape">shape</span>& stay healthy
             </h1>
@@ -32,7 +43,9 @@
               and transformation stories to help you get fit and stay fit!
             </p>
             <div class="button-box">
-              <button class="pripary-btn">Join Club Now</button>
+              <button class="pripary-btn">
+                Join<span class="mobile-hide display-none"> Club</span> Now
+              </button>
               <button class="btn-header pripary-btn">Download App</button>
             </div>
           </div>
@@ -55,7 +68,7 @@
       </div>
     </header>
     <main>
-      <section class="change-habits flex-direction-column">
+      <section class="change-habits flex-direction-column display-none">
         <div class="havit-box">
           <div class="change-habit-content">
             <h1 class="change-habits-title section-title">
@@ -117,7 +130,7 @@
         </div>
       </section>
 
-      <section class="run-extra">
+      <section class="run-extra display-none">
         <div class="run-extra-box">
           <div class="content-box">
             <h2 class="run-extra-title">Run an Extra <br />Mile Easily</h2>
@@ -134,7 +147,7 @@
         </div>
       </section>
 
-      <section class="exercises">
+      <section class="exercises display-none">
         <div class="exercises-box">
           <div class="exercises-content-box">
             <div class="content">
@@ -170,7 +183,7 @@
         </div>
       </section>
 
-      <section class="clint-review">
+      <section class="clint-review display-none">
         <div class="clint-review-content">
           <h2 class="clint-review-title section-title">
             Our Happy Coustomar's Words
@@ -286,7 +299,7 @@
         </div>
       </section>
 
-      <section class="BMI-claculator">
+      <section class="BMI-claculator display-none">
         <div class="bmi-calculator-box">
           <div class="bmi-content-box">
             <h2 class="BMI-claculator-title section-title">BMI Claculator</h2>
@@ -358,7 +371,7 @@
         </div>
       </section>
 
-      <section class="our-team">
+      <section class="our-team display-none">
         <div class="out-team-textbox">
           <h2 class="our-team-title section-title">Meet Our Team</h2>
           <p class="description our-team-description">
@@ -414,7 +427,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer display-none">
       <div class="footer-links">
         <div class="fitness">
           <h1 class="footer-title">Fitness</h1>
