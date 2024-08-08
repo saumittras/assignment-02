@@ -18,7 +18,7 @@
   box-sizing: border-box;
 }
 body {
-  width: 1360px;
+  max-width: 1360px;
   background-color: rgb(0, 0, 0);
   color: white;
 }
@@ -572,7 +572,6 @@ main {
 .clint-review {
   max-width: 1360px;
   min-height: 500px;
-  margin-top: 70px;
 }
 
 .clint-review-content {
@@ -609,7 +608,7 @@ main {
 }
 
 .clint-review-box {
-  width: 1260px;
+  max-width: 1260px;
   height: auto;
   display: flex;
   gap: 10px;
@@ -617,7 +616,7 @@ main {
   margin: 0 auto;
 }
 .review-item-box {
-  width: 420px;
+  max-width: 420px;
   height: 250px;
   display: flex;
   flex-direction: row;
@@ -626,11 +625,7 @@ main {
   gap: 20px;
   border-top-left-radius: 50px;
   border-bottom-left-radius: 50px;
-  background: rgba(255, 255, 255, 0.15);
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border-radius: 10px;
+  background-color: rgb(33, 33, 33);
 }
 .left-box {
   width: 170px;
@@ -648,10 +643,14 @@ main {
   display: flex;
   flex-direction: column;
   align-content: space-around;
+  padding-right: 5px;
 }
 .customar-text {
   width: 180px;
   height: auto;
+}
+.customar-text q {
+  padding-right: 1rem;
 }
 .image {
   width: 150px;
@@ -983,15 +982,18 @@ hr {
 
 /* Styling for mobile device from here */
 @media screen and (max-width: 576px) {
-  /* .mobile-hide {
-    display: none;
-  } */
-  .banner-box {
-    display: none;
-    flex-direction: column;
-  }
-  #mobile {
+  .clint-review-box {
     display: flex;
     flex-direction: column;
+    border: 1px solid red;
+  }
+  .google-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .review-item-box {
+    max-width: 420px;
+    height: auto;
   }
 }
