@@ -997,24 +997,28 @@ hr {
 
   /* Running extra  mobile style start from here */
   .run-extra-box {
+    height: auto;
     display: flex;
     flex-direction: column;
     margin: 20px;
   }
   .content-box {
+    width: auto;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    max-width: 90%;
+    max-width: 100%;
     margin: 30px;
   }
 
   .run-extra-image {
     /* -webkit-border-radius: 50px;
     -moz-border-radius: 50px; */
-    width: 287px;
-    height: 170px;
+    background-size: 287px 170px;
+    /* width: 287px;
+    height: 170px; */
     border-radius: 18px;
     margin: 33px;
   }
