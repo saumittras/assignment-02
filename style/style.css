@@ -174,7 +174,7 @@ ul .active {
 
 header {
   max-width: 1360px;
-  min-height: 675px;
+  height: auto;
   background: linear-gradient(
     180deg,
     rgb(17, 17, 17),
@@ -184,7 +184,7 @@ header {
 
 .banner-box {
   max-width: 1150px;
-  min-height: 580px;
+  height: auto;
   display: flex;
   flex-direction: row;
   margin: 0 auto;
@@ -506,7 +506,6 @@ main {
 .exercises-image-grid .box-1 {
   background-image: linear-gradient(rgba(6, 255, 210, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/exercise1.jpg");
-
   background-position: center;
   background-repeat: no-repeat;
   background-position: center;
@@ -571,7 +570,7 @@ main {
 /* customer review section style start from here */
 .clint-review {
   max-width: 1360px;
-  min-height: 500px;
+  height: auto;
 }
 
 .clint-review-content {
@@ -978,9 +977,29 @@ hr {
 /* Footer Style ends from here */
 
 /* Styling for mobile device from here */
+
 @media screen and (max-width: 576px) {
   .display-none {
     display: none;
+  }
+  .hide-in-mobile {
+    display: none;
+  }
+  .website-title-mobile,
+  .header-title-mobile {
+    font-size: 2.25rem;
+  }
+  .section-title-mobile {
+    font-size: 2rem;
+  }
+  .sub-section-title-mobile {
+    font-size: 1rem;
+  }
+  .description-mobile {
+    font-size: 0.875rem;
+  }
+  .table-text-size {
+    font-size: 0.875rem;
   }
 
   /* Change your habits mobile style starts from here */
@@ -1023,6 +1042,66 @@ hr {
     margin: 33px;
   }
 
+  /* Trainings and exercises */
+  .exercises-box {
+    display: flex;
+    flex-direction: column;
+  }
+  .box-1 {
+    grid-area: box-1;
+  }
+  .exercises-image-grid .box-2 {
+    background-image: linear-gradient(rgba(255, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url("../images/exercise2.png");
+    grid-area: box-2;
+    background-position: 70% 50%;
+  }
+  .box-4 {
+    grid-area: box-4;
+  }
+  .box-5 {
+    grid-area: box-5;
+  }
+  .row-1 {
+    display: grid;
+    grid-template-areas: "box-1 box-1 box-2 box-2 ";
+  }
+  .row-2 {
+    display: grid;
+    grid-template-areas: "box-4 box-4 box-5 box-5";
+  }
+  .box-3,
+  .box-6 {
+    display: none;
+  }
+  .exercises-content-box {
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 37px;
+  }
+  .exercises-image-grid {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .row-1 .box-1,
+  .row-1 .box-2,
+  .row-1 .box-3,
+  .row-2 .box-4,
+  .row-2 .box-5,
+  .row-2 .box-6 {
+    height: 140px;
+  }
+  .exercises-image-grid .row-1 {
+    max-width: 1060px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 0.5fr;
+  }
+  .exercises-image-grid .row-2 {
+    max-width: 1060px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
   /* Clint review mobile style start from here */
   .clint-review-box {
     display: flex;
@@ -1037,5 +1116,29 @@ hr {
   .review-item-box {
     max-width: 420px;
     height: auto;
+  }
+
+  /* Meet Our Team Mobile  styling start from here */
+  .our-team-image-grid {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin: 0 auto;
+  }
+  .ins-1,
+  .ins-4 {
+    display: none;
+  }
+  .grid-image-item {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+  }
+  .grid-image-item img {
+    width: 100%;
+  }
+  .out-team-textbox {
+    width: 90%;
   }
 }
