@@ -1013,9 +1013,9 @@ hr {
   /* Nav Bar mobile styling start from here */
 
   .nav-box {
+    padding-top: 50px;
     width: 90%;
     margin: 0 auto;
-    padding: 50px;
   }
   .mobile-manu {
     height: 18px;
