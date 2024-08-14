@@ -24,6 +24,9 @@ body {
 }
 /* General Setting Start here */
 /* Shear Styles start from here */
+.mobile-manu {
+  display: none;
+}
 
 .flex-direction-column {
   display: flex;
@@ -174,7 +177,7 @@ ul .active {
 
 header {
   max-width: 1360px;
-  height: auto;
+  min-height: 600px;
   background: linear-gradient(
     180deg,
     rgb(17, 17, 17),
@@ -312,7 +315,6 @@ header {
   justify-content: center;
   align-items: flex-start;
   padding: 1rem 2.5rem 1rem 2.5rem;
-
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -971,7 +973,10 @@ select option {
   text-align: left;
 }
 hr {
+  width: 95%;
+  margin: 0 auto;
   margin-top: 80px;
+  color: rgba(255, 255, 255, 0.1);
 }
 
 /* Footer Style ends from here */
@@ -981,6 +986,9 @@ hr {
 @media screen and (max-width: 576px) {
   .display-none {
     display: none;
+  }
+  .mobile-manu {
+    display: block;
   }
   .hide-in-mobile {
     display: none;
@@ -1118,6 +1126,27 @@ hr {
     height: auto;
   }
 
+  /* BMI-Calculator Mobile Styling start from here */
+
+  .BMI-calculator-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .bmi-content-box {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .height,
+  .weight,
+  .age-s,
+  .gender,
+  .activity {
+    width: 100%;
+  }
+
   /* Meet Our Team Mobile  styling start from here */
   .our-team-image-grid {
     width: 90%;
@@ -1140,5 +1169,27 @@ hr {
   }
   .out-team-textbox {
     width: 90%;
+  }
+
+  /* Footer section mobile styling from here */
+  .footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 20px;
+  }
+  .fitness,
+  .get-started {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .copyright h5 {
+    padding: 40px;
+    margin: 0 auto;
+  }
+  hr {
+    width: 80%;
+    margin: 0 auto;
   }
 }
