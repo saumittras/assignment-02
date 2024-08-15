@@ -483,6 +483,8 @@ main {
   width: 100%;
   height: 100%;
   border-radius: 18px;
+  object-fit: none;
+  object-position: 66% 33%;
 }
 
 .content-box {
@@ -634,6 +636,9 @@ main {
 .clint-review {
   max-width: 1360px;
   height: auto;
+}
+.clint-review-title {
+  text-align: center;
 }
 
 .clint-review-content {
@@ -796,6 +801,10 @@ main {
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-collapse: collapse;
   padding-left: 18px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.bmi-chart th {
+  color: rgb(255, 255, 255);
 }
 
 .bmi-calculator-input {
@@ -834,7 +843,7 @@ main {
   height: 48px;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.1);
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.5);
   font-family: Inter;
   font-size: 16px;
   font-weight: 400;
@@ -845,14 +854,15 @@ main {
 }
 ::placeholder {
   padding: 20px;
+  color: rgba(255, 255, 255, 0.5);
 }
 select {
-  /* padding-left: 20px; */
   padding: 12px 20px 12px 20px;
 }
 
 select option {
   background-color: black;
+  color: rgba(255, 255, 255, 0.6);
   font-family: Inter;
   font-size: 16px;
   font-weight: 400;
@@ -1261,6 +1271,12 @@ hr {
     width: auto;
     height: auto;
     margin: 30px;
+  }
+  .run-extra-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+    object-fit: cover;
   }
 
   .btn-run-extra {
