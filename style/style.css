@@ -1261,6 +1261,7 @@ hr {
     width: auto;
     height: auto;
     margin: 30px;
+  }
 
   .btn-run-extra {
     width: 287px;
@@ -1268,7 +1269,6 @@ hr {
     padding: 16px 40px 16px 40px;
     background: rgb(230, 83, 60);
   }
-
 
   /* Trainings and exercises */
   .exercises-box {
